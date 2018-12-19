@@ -1,0 +1,110 @@
+/*base 里面只写公共样式 是对京东网页 头部和底部样式*/
+/*右浮动*/
+.fr {
+	float: right;
+}
+/*左浮动*/
+.fl {
+	float: left;
+}
+
+/*版心样式  记住该类名*/
+.w {
+	margin: auto;    /*使用了margin来水平居中一定要记得一个前提！有宽度！！*/
+	width: 980px;   /*版心的宽度*/
+}
+/*整个粘贴，粘贴的时候一定要检查路径，一定不要错了！！*/
+
+body {
+	padding: 0;
+	margin: auto;
+	width: 980px;
+	background: url(../images/1.png) no-repeat center;
+}
+/*去掉所有ul的margin和padding*/
+ul,img {
+	margin: 0;
+	padding: 0;
+}
+li {
+	list-style: none;  /*把li前面的小点都取消*/
+}
+a {
+	text-decoration: none;  /* 把整个链接的下划线都取消*/
+}
+i {
+	font-style: normal;   /*把所有的i的斜体改为正常形态*/
+}
+/*顶部样式开始*/
+.logo {
+	height: 70px;
+	padding-left: 10px;
+	overflow: hidden;
+	background-color: #fff;
+}
+.logo a,.logo div{
+	height: 40px;
+	margin-top: 15px;
+	margin-left: 10px;
+}
+.logo a {
+	width: 50px;
+	display: block;
+	/*background可以用来设置背景图片，图片铺放方式，背景位置，*/
+	background: url("../images/logo.jpg") no-repeat;
+	text-indent: -4em; /*将公司名称首行缩进4个字母*/
+	overflow: hidden;
+}
+.logo p {
+	padding: 0;
+	margin: 0;
+	font-family: 'STHeiti','STKaiti' ;/*华文黑体 华文楷体*/
+	font-size: 16px;
+}
+.logo .en {
+	font-size: 12px;
+	color: #807f7f;
+}
+/*顶部导航栏开始*/
+.head {
+	height: 38px;
+	overflow: hidden;
+}
+.double_line {
+	height: 4px;
+	border-top: 1px solid #c72c47;
+	background-color: #edbec3;/*005c8d*/
+	
+}
+.shortcut {
+	height: 30px;
+	background: -webkit-linear-gradient(top, #8ac6e2, #035985);
+}
+.shortcut ul {
+	margin-left: 60px;
+}
+.shortcut li {
+	line-height: 30px;
+	text-align: center;
+	float: left;
+	margin: auto;
+
+}
+.shortcut li:hover {
+	background:-webkit-linear-gradient(top, #e9abb1, #bb2939);
+	border: 1px solid #c72c47;
+	border-top: 0;
+}
+.shortcut li a {
+	width: 60px;
+	display: block;
+	margin: 0 15px;
+	font-size: 12px;
+	color: #fff;
+}
+/*顶部导航栏结束*/
+/*顶部样式结束*/
+/*底部样式开始*/
+
+
+/*底部样式结束*/

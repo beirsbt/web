@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>floating</title>
+	<style>
+		body,div {
+			margin: 0 auto;
+			padding: 0;
+
+		}
+		div {
+			text-align: center;
+		}
+		.green div,.purple div,.pink div,.mao_body div {
+			float: left;
+			/*border: 1px solid red; */
+		}
+		.green,.purple,.pink {
+			width: 400px;
+		}
+		.green,.mao_body {
+			height: 100px;
+			display: flex;
+		}
+		.purple,.pink {
+			height: 200px;
+			display: flex;
+		}
+		
+		.green div:nth-child(1) {
+			flex: 1;
+			background-color: #cfc;
+		}
+		.green div:nth-child(2) {
+			flex: 2;
+			background-color: #fcc;
+		}
+		.green div:nth-child(3) {
+			flex: 1;
+			background-color: #ccf;
+		}
+
+		.left {
+			flex: 1;
+			background-color: #ccc;
+		}
+		.right {
+			flex: 3;
+		}
+		.right div {
+			height: 50%;
+			width: 100px;
+		}
+		.right div:nth-child(1) {
+			background-color: #ccf;
+		}
+		.right div:nth-child(2) {
+			background-color: #ccc;
+		}
+		.right div:nth-child(3) {
+			background-color: #cfc;
+		}
+		.right div:nth-child(4) {
+			background-color: #fcc;
+		}
+		.right div:nth-child(5) {
+			background-color: #cfc;
+		}
+		.right div:nth-child(6) {
+			background-color: #ccc;
+		}
+		
+		.big {
+			flex: 1;
+			width: 200px;
+		}
+		.big div {
+			width: 100px;
+			height: 200px;
+		}
+		.big div:first-child {
+			background-color: #fcc;
+		}
+		.big div:last-child {
+			background-color: #ccc;
+		}
+		.small {
+			flex: 1;
+		}
+		.small div:nth-child(1) {
+			width: 200px;
+			height: 100px;
+			background-color: #fcc;
+		}
+		.small div:nth-child(2) {
+			width: 100px;
+			height: 100px;
+			background-color: #cfc;
+		}
+		.small div:nth-child(3) {
+			width: 100px;
+			height: 100px;
+			background-color: #ccc;
+		}
+		.mao_body {
+			width: 600px;
+		}
+		.mao_body div {
+			flex: 1;
+		}
+		.mao_body div:nth-child(1){
+			background-color: #cfc;
+		}
+		.mao_body div:nth-child(2){
+			background-color: #ccf;
+		}
+		.mao_body div:nth-child(3){
+			background-color: #fcc;
+		}
+		.mao_body div:nth-child(4){
+			background-color: #ccf;
+		}
+		.mao_body div:nth-child(5){
+			background-color: #cfc;
+		}
+		.mao_body div:nth-child(6){
+			background-color: #fcc;
+		}
+	</style>
+</head>
+<body>
+	<div class="mao_head">
+		<div class="green">
+			<div>11</div>
+			<div>12</div>
+			<div>13</div>
+		</div>
+		<div class="purple">
+			<div class="left">
+				21
+			</div>
+			<div class="right">
+				<div>22</div>
+				<div>23</div>
+				<div>24</div>
+				<div>25</div>
+				<div>26</div>
+				<div>27</div>
+			</div>
+		</div>
+		<div class="pink">
+			<div class="big">
+				<div>31</div>
+				<div>32</div>
+			</div>
+			<div class="small">
+				<div>33</div>
+				<div>34</div>
+				<div>35</div>
+			</div>
+		</div>
+	</div>
+	<div class="mao_body">
+		<div>41</div>
+		<div>42</div>
+		<div>43</div>
+		<div>44</div>
+		<div>45</div>
+		<div>46</div>
+	</div>
+	<script>
+
+
+	</script>
+</body>
+</html>
