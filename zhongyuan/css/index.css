@@ -1,0 +1,328 @@
+/*大图左边部分样式 开始*/
+.bigimage {
+	height: 280px;
+	
+	overflow: hidden;
+
+}
+       /*差异样式 开始*/
+div.news {
+	width: 720px;
+	padding: 5px;
+    height: 225px;
+    margin-left: 10px;
+}
+.news .latest {
+	background-color: #303338;
+	border-radius: 3px;
+	position: relative;
+
+}
+       /*差异样式 结束*/
+.col_l {
+
+	width: 740px;
+	margin: 10px 0 0 10px;
+	position: relative;
+	overflow: hidden;
+}
+#screen {
+	position: relative;
+	height: 276px;
+	overflow: hidden;
+}
+#screen ul {
+	position: absolute;
+}
+
+.col_l ul li {
+	width: 740px;  
+	height: 267px;
+	float: left;
+}
+.bigimage .col_l img {
+	background-color: #fff;
+	padding: 8px 6px;
+	border-radius: 5px;
+	
+}
+
+ .col_l a {
+	display: block;
+}
+#biaoqian {
+	position: absolute;
+	bottom: 18px;
+	left: 0;
+	height: 30px;
+	width: 726px;
+	background: rgba(255,255,255,.3);
+}
+.col_l ol {
+	position: absolute;
+	bottom: -22px;
+    right: 16px;
+	height: 30px;
+}
+ol li {
+	float: left;
+	width: 17px;
+	height: 17px;
+	line-height: 17px;
+	background: #fff;
+    border: 1px solid #ccc;
+    margin-left: 10px;
+    cursor: pointer;
+    text-align: center;;
+   	border-radius: 3px;
+}
+li.current {
+	background-color: #529cbf;
+	color: #fff;
+	border: 1px solid #0b5e81;
+}
+/*大图左边部分样式 结束*/
+/*大图右边部分样式 开始*/
+/*公共栏部分 开始*/
+.col_r {
+	width: 210px;
+	height: 258px;
+	background-color: #fff;
+	padding: 5px;
+	margin-top: 10px;
+	border-radius: 5px;
+
+}
+
+.management {
+	height: 30px;
+	position: relative;
+	background-color: #303338;
+	color: #fff;
+	position: relative;
+	border-radius: 4px;
+
+}
+.management span,.management p ,.management a {
+	position: absolute;
+
+
+}
+.management span {
+	top: 8px;
+    left: 7px;
+    border: 1px solid #303338;
+	height: 10px;
+	width: 10px;
+	display: block;
+	background: url(../images/2_07.png);
+
+}
+.management p {
+	left: 27px;
+    top: -8px;
+	font-size: 14px;
+	font-weight: 700;
+	padding: 0;
+	color: #fff;
+}
+/*差异样式  开始*/
+
+/*差异样式  结束*/
+.management a {
+	top: 3px;
+    right: 10px;
+	color: #fff;
+	font-size: 14px;
+}
+       /*差异样式 开始*/
+.list_item {
+	height: 46px;
+	background-color: #fff;
+	border-bottom: 1px dashed #303338;
+}
+.list_item span {
+	top: 7px;
+	left: 0;
+	height: 33px;
+	width: 41px;
+}
+.one span {
+	background: url(../images/bg.png);
+
+}
+.two span {
+	background: url(../images/bs.png);
+}
+.three span {
+	background: url(../images/zz.png);
+}
+.four span {
+	background: url(../images/zs.png);
+}
+.five span {
+	background: url(../images/bj.png);
+}
+.management.five {
+	border: 0;
+}
+.list_item p {
+	color: #303338;
+	top: 4px;
+    left: 50px;
+    font-size: 12px;
+    font-weight: 400;
+}
+.list_item a {
+	color: #303338;
+	font-size: 16px;
+    top: 12px;
+    right: 6px;
+}
+       /*差异样式 结束*/
+/*大图右边部分样式 结束*/
+/*新闻样式  开始*/
+.news_item {
+	position: relative;
+	height: 33px;
+	border-bottom: 1px dashed #303338;
+}
+.news_item span,.news_item a,.news_item p {
+	position: absolute;
+}
+.news_item span {
+	top: 13px;
+    left: 5px;
+    height: 13px;
+    width: 8px;
+	background: url(../images/left.png) no-repeat;
+}
+.news_item a {
+	font-size: 12px;
+	color: #303338;
+	top: 10px;
+    left: 15px;
+}
+.news_item p {
+	right: 20px;
+    font-size: 12px;
+    color: #303338;
+}
+.news_item .hot_one,.news_item .hot_two {
+	width: 20px;
+	height: 12px;
+	top: -3px;
+	left: 245px;
+	background: url(../images/hot.png) no-repeat;
+
+}
+.news_item .hot_two {
+	left: 282px;
+}
+.news:last-child {
+	border-bottom: 0;
+}
+.connect {
+	height: 226px;
+
+	margin: 10px;
+
+}
+.connect .information {
+	margin: 6px 0;
+	padding: 8px 6px;
+    height: 41px;
+    width: 194px;
+	border: 1px solid #b6b6b6;
+	border-radius: 5px;
+}
+.connect .information p {
+	font-size: 18px;
+	margin: 0 0 0 8px;
+	color: #303338;
+}
+.connect .information:first-child {
+	top: 5px;
+	left: 10px;
+}
+
+/*新闻样式  结束*/
+/*消息公告   开始*/
+.public {
+	position: relative;
+	margin:10px 10px 0 10px;
+	background-color: #f0f0f0;
+	border-radius: 5px;
+	height: 35px;
+
+}
+.public span {
+	position: absolute;
+	top: 8px;
+	left: 8px;
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	background: url(../images/laba.png);
+}
+.public a {
+	top: 8px;
+	left: 30px;
+	position: absolute;
+	font-size: 12px;
+	color: #383838;
+}
+.public .two {
+	left: 132px;
+}
+.public .three {
+	left: 695px;
+}
+/*消息公告   结束*/
+/*介绍部分 开始*/
+.introduction {
+	height: 278px;
+	overflow: hidden;
+}
+.introduction .about {
+	width: 267px;
+	margin: 10px 8px 10px 10px;
+	border-radius: 5px;
+}
+
+.introduction img {
+	border-radius: 5px;
+	margin: 8px 3px;
+}
+.about p,.others p {
+	font-size: 12px;
+	margin: 0;
+	top: 5px;
+}
+.introduction .others {
+	margin-right: 8px;
+	width: 210px;
+	border-radius: 5px;
+	position: relative;
+}
+.others .management {
+	background-color: #fff;
+}
+.others .management span {
+	background: url(../images/2_03.png);
+	border: 0;
+}
+.others .management p {
+	color: #383838;
+}
+.others a {
+	color: #5a5a5a;
+	position: absolute;
+	bottom: 10px;
+    right: 25px;
+    font-size: 12px;
+}
+.introduction .last {
+	margin: 10px 0;
+}
+/*介绍部分 结束*/

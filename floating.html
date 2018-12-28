@@ -12,44 +12,53 @@
 		div {
 			text-align: center;
 		}
+		/*
+		总共分为4各部分，每个部分内的div都浮动
+		 */
 		.green div,.purple div,.pink div,.mao_body div {
 			float: left;
-			/*border: 1px solid red; */
 		}
+		/*
+		分别设置每个部分的宽高
+		 */
 		.green,.purple,.pink {
 			width: 400px;
 		}
 		.green,.mao_body {
 			height: 100px;
-			display: flex;
 		}
 		.purple,.pink {
 			height: 200px;
-			display: flex;
 		}
-		
+		/*
+		第一个部分green类：
+		 */
 		.green div:nth-child(1) {
-			flex: 1;
 			background-color: #cfc;
 		}
-		.green div:nth-child(2) {
-			flex: 2;
+		.fat_pink {
 			background-color: #fcc;
+			width: 200px;
+			height: 100px;
 		}
 		.green div:nth-child(3) {
-			flex: 1;
 			background-color: #ccf;
 		}
-
-		.left {
-			flex: 1;
+		/*
+		第二个部分 purple类：分为左边 右边
+		 */
+		.tall_purple {
+			width: 100px;
+			height: 200px;
 			background-color: #ccc;
 		}
+		
 		.right {
-			flex: 3;
+			width: 300px;
+			height: 200px;
 		}
 		.right div {
-			height: 50%;
+			height: 100px;
 			width: 100px;
 		}
 		.right div:nth-child(1) {
@@ -61,6 +70,7 @@
 		.right div:nth-child(3) {
 			background-color: #cfc;
 		}
+
 		.right div:nth-child(4) {
 			background-color: #fcc;
 		}
@@ -70,9 +80,10 @@
 		.right div:nth-child(6) {
 			background-color: #ccc;
 		}
-		
+		/*
+		第三部分pink类
+		 */
 		.big {
-			flex: 1;
 			width: 200px;
 		}
 		.big div {
@@ -86,13 +97,9 @@
 			background-color: #ccc;
 		}
 		.small {
-			flex: 1;
-		}
-		.small div:nth-child(1) {
 			width: 200px;
-			height: 100px;
-			background-color: #fcc;
 		}
+		
 		.small div:nth-child(2) {
 			width: 100px;
 			height: 100px;
@@ -103,11 +110,15 @@
 			height: 100px;
 			background-color: #ccc;
 		}
+		/*
+		第四部分 帽沿类
+		 */
 		.mao_body {
 			width: 600px;
 		}
 		.mao_body div {
-			flex: 1;
+			width: 100px;
+			height: 100px;
 		}
 		.mao_body div:nth-child(1){
 			background-color: #cfc;
@@ -127,17 +138,25 @@
 		.mao_body div:nth-child(6){
 			background-color: #fcc;
 		}
+
+		/*
+		添加的类，这个类的宽为100 高为100
+		 */
+		.one {
+			width: 100px;
+			height: 100px;
+		}
 	</style>
 </head>
 <body>
 	<div class="mao_head">
 		<div class="green">
-			<div>11</div>
-			<div>12</div>
-			<div>13</div>
+			<div class="one">11</div>
+			<div class="fat_pink">12</div>
+			<div class="one">13</div>
 		</div>
 		<div class="purple">
-			<div class="left">
+			<div class="left tall_purple">
 				21
 			</div>
 			<div class="right">
@@ -152,10 +171,10 @@
 		<div class="pink">
 			<div class="big">
 				<div>31</div>
-				<div>32</div>
+				<div class="tall_purple">32</div>
 			</div>
 			<div class="small">
-				<div>33</div>
+				<div class="fat_pink">33</div>
 				<div>34</div>
 				<div>35</div>
 			</div>
