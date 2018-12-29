@@ -95,57 +95,62 @@ li.current {
 }
 
 .management {
-	height: 30px;
-	position: relative;
-	background-color: #303338;
-	color: #fff;
-	position: relative;
-	border-radius: 4px;
+	height: 18px;
+    line-height: 25px;
+    background-color: #303338;
+    color: #fff;
+    padding: 2px 4px 10px 5px;
+    /* position: relative; */
+    border-radius: 4px;
 
 }
-.management span,.management p ,.management a {
-	position: absolute;
 
-
-}
 .management span {
-	top: 8px;
-    left: 7px;
-    border: 1px solid #303338;
-	height: 10px;
-	width: 10px;
-	display: block;
-	background: url(../images/2_07.png);
-
+	border: 1px solid #303338;
+	
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    background: url(../images/2_07.png) no-repeat center;
+	margin:  0 5px;
 }
 .management p {
-	left: 27px;
-    top: -8px;
 	font-size: 14px;
-	font-weight: 700;
-	padding: 0;
-	color: #fff;
+    font-weight: 700;
+  	
+    margin: 0;
+    color: #fff;
+    display: inline-block;
 }
 /*差异样式  开始*/
 
 /*差异样式  结束*/
 .management a {
-	top: 3px;
-    right: 10px;
+	margin-left: 72px;
 	color: #fff;
 	font-size: 14px;
 }
        /*差异样式 开始*/
 .list_item {
-	height: 46px;
+	height: 35px;
+	padding: 5px;
+	line-height: 40px;
 	background-color: #fff;
 	border-bottom: 1px dashed #303338;
+	
+	
 }
 .list_item span {
-	top: 7px;
-	left: 0;
 	height: 33px;
 	width: 41px;
+	margin: 0 5px 0 0;
+	
+}
+.list_item p {
+	color: #303338;
+    font-size: 12px;
+    font-weight: 400;
+   	
 }
 .one span {
 	background: url(../images/bg.png);
@@ -166,13 +171,7 @@ li.current {
 .management.five {
 	border: 0;
 }
-.list_item p {
-	color: #303338;
-	top: 4px;
-    left: 50px;
-    font-size: 12px;
-    font-weight: 400;
-}
+
 .list_item a {
 	color: #303338;
 	font-size: 16px;
