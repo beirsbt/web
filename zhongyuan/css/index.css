@@ -132,59 +132,77 @@ li.current {
 }
        /*差异样式 开始*/
 .list_item {
-	height: 35px;
-	padding: 5px;
+	height: 33px;
+	
 	line-height: 40px;
 	background-color: #fff;
 	border-bottom: 1px dashed #303338;
 	
 	
 }
-.list_item span {
+/* update start*/
+.list_item img {
 	height: 33px;
 	width: 41px;
-	margin: 0 5px 0 0;
+	margin: 5px 5px 0 0;
 	
 }
 .list_item p {
 	color: #303338;
     font-size: 12px;
     font-weight: 400;
-   	
+   	margin: 5px 0;
 }
-.one span {
-	background: url(../images/bg.png);
-
+.list_item img {
+	float: left;
+	width: 41px;
+	height: 33px;
+	margin: 0 5px 0 0;
 }
-.two span {
-	background: url(../images/bs.png);
+.management.list_item p {
+	float: left;
+	height: 33px;
+	line-height: 33px;
 }
-.three span {
-	background: url(../images/zz.png);
+.management.list_item a {
+	float: right;
+	margin: 0;
+	height: 33px;
+	line-height: 33px;
 }
-.four span {
-	background: url(../images/zs.png);
+.clearfix {
+  *zoom: 1;
 }
-.five span {
-	background: url(../images/bj.png);
+.clearfix:after {
+  display: block;
+  content: '\200b';
+  clear: both;
+  height: 0;
 }
+/* update end*/
 .management.five {
 	border: 0;
 }
-
+.management.five a {
+	float: left;
+}
 .list_item a {
 	color: #303338;
 	font-size: 16px;
-    top: 12px;
-    right: 6px;
+    
 }
        /*差异样式 结束*/
 /*大图右边部分样式 结束*/
 /*新闻样式  开始*/
+.news .management a {
+	margin-left: 580px;
+}
+
 .news_item {
 	position: relative;
 	height: 33px;
 	border-bottom: 1px dashed #303338;
+	overflow: hidden;
 }
 .news_item span,.news_item a,.news_item p {
 	position: absolute;
@@ -297,6 +315,9 @@ li.current {
 	font-size: 12px;
 	margin: 0;
 	top: 5px;
+}
+.about a {
+	margin-left: 138px;
 }
 .introduction .others {
 	margin-right: 8px;
