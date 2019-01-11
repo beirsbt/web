@@ -36,6 +36,9 @@ a {
 i {
 	font-style: normal;   /*把所有的i的斜体改为正常形态*/
 }
+.current_color {
+
+}
 /*顶部样式开始*/
 .logo {
 	height: 70px;
@@ -78,34 +81,33 @@ i {
 	
 }
 .shortcut {
-	height: 30px;
+	height: 40px;
 	background: -webkit-linear-gradient(top, #8ac6e2, #035985);
+	padding-left: 60px;
 }
-.shortcut ul {
-	margin-left: 25px;
-}
+
 .shortcut li {
 	line-height: 30px;
 	text-align: center;
-	float: left;
-	margin-left:27px;
-
 }
-.shortcut li:hover {
+.shortcut a:hover,
+.current_color {
 	background:-webkit-linear-gradient(top, #e9abb1, #bb2939);
 	border: 1px solid #c72c47;
 	border-top: 0;
-	width: 70px;
+	padding: 0 14px;
 	height: 29px;
-	text-align: center;
 }
-.shortcut li a {
-	width: 72px;
-	display: block;
-	
+.shortcut a {
+	text-align: center;
+	height: 30px;
+	display: inline-block;
+	padding: 0 15px;
 	font-size: 12px;
 	color: #fff;
+	float: left;
 }
+
 /*顶部导航栏结束*/
 /*顶部样式结束*/
 /*底部样式开始*/
@@ -130,3 +132,35 @@ i {
 	margin: 0;
 }
 /*底部样式结束*/
+/*内部网页公共样式   start*/
+		.intro dt,.intro dd {
+			display: inline-block;
+			float: left;
+		}
+		.intro dd {
+			width: 600px;
+
+		}
+		.intro dl:first-child {
+			height: 230px;
+			border-bottom: 1px dotted #333;
+		}
+		.intro span {
+			display: inline-block;
+			width: 126px;
+			height: 25px;
+			font-family: "微软雅黑";
+			color: #fff;
+			font-size: 14px;
+			line-height: 22px;
+			padding-left: 30px;
+			background: url(../images/houqing-logo1.jpg) repeat-x;
+		}
+		
+		.intro .logo_2 {
+			background: url(../images/houqing-logo2.jpg);
+		}
+		.intro dt:last-child {
+			margin-top: 60px;
+		}
+/*内部网页公共样式   end*/

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>float</title>
+	<style>
+	/*公共样式  start*/
+		div {
+			height: 100px;
+			width: 100px;
+			text-align: center;
+		}
+		.tall {
+			height: 200px;
+		}
+		.fat {
+			width: 200px;
+		}
+		.clearfix:before,.clearfix:after {
+			display: block;
+  			content: "";
+  			
+		}
+		.clearfix:after {
+			
+  			clear: both;
+		}
+		.clearfix {
+			*zoom: 1;
+		}
+		
+		/*公共样式  end*/
+
+		.mao_head {
+			width: 400px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.mao_head div {
+			float: left;
+		}
+		.mao_head div:nth-child(1),
+		.mao_head div:nth-child(7),
+		.mao_head div:nth-child(9),
+		.mao_head div:nth-child(14),
+		.mao_body div:nth-child(1),
+		.mao_body div:nth-child(5) {
+			background-color: #cfc;
+		}
+		.mao_head div:nth-child(2),
+		.mao_head div:nth-child(8),
+		.mao_head div:nth-child(11),
+		.mao_head div:nth-child(13),
+		.mao_body div:nth-child(3),
+		.mao_body div:nth-child(6) {
+			background-color: #fcc;
+		}
+		.mao_head div:nth-child(3),
+		.mao_head div:nth-child(5),
+		.mao_head div:nth-child(15),
+		.mao_body div:nth-child(4) {
+			background-color: #ccf;
+		}
+		.mao_head div:nth-child(4),
+		.mao_head div:nth-child(6),
+		.mao_head div:nth-child(10),
+		.mao_head div:nth-child(12),
+		.mao_body div:nth-child(2) {
+			background-color: #ccc;
+		}
+		
+		
+		.mao_body {
+			width: 600px;
+			margin-left: auto;
+			margin-right: auto;
+			
+		}
+		.mao_body div {
+			float: left;
+		}
+		.mao_body div:nth-child(1) {
+			background-color: #cfc;
+		}
+		 {
+			background-color: #ccf;
+		}
+		.mao_body div:nth-child(3) {
+			background-color: #fcc;
+		}
+		 {
+			background-color: #ccf;
+		}
+		.mao_body div:nth-child(5) {
+			background-color: #cfc;
+		}
+		 {
+			background-color: #fcc;
+		}
+	</style>
+</head>
+<body>
+	<div class="mao_head clearfix">
+		<div>11</div>
+			<div class="fat">12</div>
+			<div>13</div>
+			<div class="tall">21</div>
+			<div>22</div>
+			<div>23</div>
+			<div>24</div>
+			<div>25</div>
+			<div>26</div>
+			<div>27</div>
+			<div class="tall">31</div>
+			<div class="tall">32</div>
+			<div class="fat">33</div>
+			<div>34</div>
+			<div>35</div>	
+	</div>
+	<div class="mao_body clearfix">
+		<div>41</div>
+		<div>42</div>
+		<div>43</div>
+		<div>44</div>
+		<div>45</div>
+		<div>46</div>
+	</div>
+</body>
+</html>

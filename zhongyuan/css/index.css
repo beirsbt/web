@@ -51,6 +51,7 @@ div.news {
 	display: block;
 }
 #biaoqian {
+	
 	position: absolute;
 	bottom: 18px;
 	left: 0;
@@ -58,6 +59,13 @@ div.news {
 	width: 726px;
 	background: rgba(255,255,255,.3);
 }
+/*#biaoqian {
+	display: none;
+}
+.col_l:hover #biaoqian, {
+	display: block;
+
+}*/
 .col_l ol {
 	position: absolute;
 	bottom: -22px;
